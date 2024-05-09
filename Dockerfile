@@ -1,4 +1,4 @@
-FROM python:3.11-alpine as base
+FROM python:3.13.0b1-alpine as base
 
 RUN apk update && pip install --upgrade pip && \
 	adduser -D -h /home/autologin -g 'HAL' autologin
